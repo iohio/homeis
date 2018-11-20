@@ -1,0 +1,18 @@
+<ion-content padding center text-center>
+  <ion-title>Homeis</ion-title>
+  <ion-list>
+    
+    <ion-item style="margin-top: 10px;">
+      <ion-label floating>Email</ion-label>
+      <ion-input  type="text" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Password</ion-label>
+      <ion-input  type="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+
+   </ion-list>
+   <button ion-button full style="margin-top: 40px;" (click)="login(user)" >Sing In</button>
+   <button ion-button full color="light" style="margin-top: 20px;" (click)="goRegister()" >Sing Up</button>
+</ion-content>
